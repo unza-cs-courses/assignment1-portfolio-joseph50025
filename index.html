@@ -4,10 +4,214 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Professional portfolio website for [Your Name]">
-    <title>Portfolio - [Your Name]</title>
+    <title>Portfolio - Joseph Chipili</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a href="#" class="logo">JD</a>
+                
+                <!-- Mobile navigation toggle (CSS-only hamburger) -->
+                <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+                <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Home/Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title">John Doe</h1>
+                    <p class="hero__tagline">Creative Web Developer & Problem Solver</p>
+                    <a href="#projects" class="btn btn--primary">View My Work</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about__grid">
+                    <div class="about__image-wrapper">
+                        <img src="images/profile.jpg" 
+                             alt="John Doe - Web Developer" 
+                             class="about__image"
+                             width="400"
+                             height="400">
+                    </div>
+                    <div class="about__content">
+                        <p class="about__bio">I'm a passionate web developer with over 3 years of experience creating responsive, user-friendly websites. My journey in web development started during my computer science studies, where I discovered my love for combining creative design with technical problem-solving.</p>
+                        <p class="about__bio">I specialize in front-end development with HTML5, CSS3, and JavaScript, always following best practices for accessibility and performance. I believe in writing clean, maintainable code and creating intuitive user experiences that make a difference.</p>
+                        <p class="about__bio">When I'm not coding, you can find me contributing to open-source projects, mentoring beginner developers, or exploring new technologies. I'm constantly learning and staying updated with the latest web standards and techniques.</p>
+                        
+                        <h3 class="about__subtitle">Skills</h3>
+                        <ul class="skills-list">
+                            <li class="skills-list__item">HTML5 & Semantic Markup</li>
+                            <li class="skills-list__item">CSS3 & Modern Layouts</li>
+                            <li class="skills-list__item">JavaScript (ES6+)</li>
+                            <li class="skills-list__item">Responsive Design</li>
+                            <li class="skills-list__item">Web Accessibility</li>
+                            <li class="skills-list__item">Version Control (Git)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
+                <div class="projects__grid">
+                    <!-- Project Card 1 -->
+                    <article class="project-card">
+                        <img src="images/project1.jpg" 
+                             alt="E-commerce website screenshot" 
+                             class="project-card__image"
+                             width="300"
+                             height="200">
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">E-Commerce Platform</h3>
+                            <p class="project-card__description">A fully responsive e-commerce website with product filtering, shopping cart, and checkout functionality. Built with HTML, CSS, and vanilla JavaScript.</p>
+                            <div class="project-card__links">
+                                <a href="#" class="btn btn--small" target="_blank" rel="noopener">Live Demo</a>
+                                <a href="#" class="btn btn--small btn--secondary" target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 2 -->
+                    <article class="project-card">
+                        <img src="images/project2.jpg" 
+                             alt="Task management app screenshot" 
+                             class="project-card__image"
+                             width="300"
+                             height="200">
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Task Manager App</h3>
+                            <p class="project-card__description">A minimalist task management application with drag-and-drop functionality and local storage persistence. Focuses on clean UI and smooth interactions.</p>
+                            <div class="project-card__links">
+                                <a href="#" class="btn btn--small" target="_blank" rel="noopener">Live Demo</a>
+                                <a href="#" class="btn btn--small btn--secondary" target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 3 -->
+                    <article class="project-card">
+                        <img src="images/project3.jpg" 
+                             alt="Weather dashboard screenshot" 
+                             class="project-card__image"
+                             width="300"
+                             height="200">
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Weather Dashboard</h3>
+                            <p class="project-card__description">Real-time weather application using the OpenWeatherMap API. Features location search, 5-day forecast, and dynamic background images based on conditions.</p>
+                            <div class="project-card__links">
+                                <a href="#" class="btn btn--small" target="_blank" rel="noopener">Live Demo</a>
+                                <a href="#" class="btn btn--small btn--secondary" target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact__grid">
+                    <div class="contact__info">
+                        <p class="contact__text">I'm always interested in hearing about new opportunities, collaborations, or just having a chat about web development. Feel free to reach out!</p>
+                        <div class="contact__details">
+                            <p><strong>Email:</strong> joseph.chipili@example.com</p>
+                            <p><strong>Location:</strong> New York, NY</p>
+                        </div>
+                    </div>
+                    
+                    <form class="contact__form" action="#" method="POST" novalidate>
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name *</label>
+                            <input type="text" 
+                                   id="name" 
+                                   name="name" 
+                                   class="form-input" 
+                                   required 
+                                   placeholder="Your full name"
+                                   aria-required="true">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" 
+                                   id="email" 
+                                   name="email" 
+                                   class="form-input" 
+                                   required 
+                                   placeholder="your.email@example.com"
+                                   aria-required="true">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea id="message" 
+                                      name="message" 
+                                      class="form-input form-input--textarea" 
+                                      required 
+                                      placeholder="Your message here..."
+                                      rows="5"
+                                      aria-required="true"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p class="footer__copyright">&copy; 2025 Joseph Chipili. All rights reserved.</p>
+                <ul class="footer__links">
+                    <li><a href="#" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a></li>
+                    <li><a href="#" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a></li>
+                    <li><a href="#" target="_blank" rel="noopener" aria-label="Twitter">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+   
+   
+   
     <!--
     ============================================================
     ASSIGNMENT 1: RESPONSIVE PORTFOLIO WEBSITE

@@ -1,3 +1,124 @@
+# CSC4035 Assignment 1: Responsive Portfolio Website
+
+**Course:** CSC4035 Web Programming and Technologies  
+**Student Name:** Joseph chipili 
+**Student ID:** 2021396347
+**Submission Date:** March 15, 2025  
+
+## Design Theme
+
+**Modern Professional Blue Theme**
+
+My portfolio website features a clean, professional design with a blue color scheme that conveys trust, reliability, and expertise. The design follows modern web development trends with:
+- Clean typography using system fonts for optimal performance
+- Subtle shadows and hover effects for depth
+- Rounded corners for approachability
+- Generous white space for readability
+- Consistent spacing throughout
+
+## CSS Techniques Used
+
+- ✅ **CSS Custom Properties** - Centralized color palette and spacing variables in `:root`
+- ✅ **Flexbox** - Used in project cards, navigation, and footer layouts
+- ✅ **CSS Grid** - Implemented in about section, projects grid, and contact section
+- ✅ **Media Queries** - Three breakpoints (768px, 1024px, 1200px)
+- ✅ **CSS Animations** - Fade-in animations on page load
+- ✅ **CSS-only Hamburger Menu** - Pure CSS mobile navigation toggle
+- ✅ **Print Stylesheet** - Optimized printing layout
+
+## Bonus Features Implemented
+
+1. **Dark/Light Mode Toggle (+3%)** - Automatic theme switching based on system preferences
+2. **CSS Animations/Transitions (+3%)** - Smooth hover effects and entrance animations
+3. **CSS-only Hamburger Menu (+2%)** - No JavaScript required for mobile navigation
+4. **Print Stylesheet (+2%)** - Clean, printer-friendly version of the portfolio
+
+**Total Bonus: +10%**
+
+## Challenges & Solutions
+
+### Challenge 1: CSS-only Hamburger Menu
+**Solution:** I used the checkbox hack with the `:checked` pseudo-class to toggle the navigation menu. The label controls the checkbox visibility while providing visual hamburger icon that animates into an X when open.
+
+### Challenge 2: Maintaining Consistent Spacing
+**Solution:** I created CSS custom properties for spacing (`--spacing-xs` through `--spacing-xl`) to ensure consistent margins and padding throughout the site. This made responsive adjustments much easier.
+
+### Challenge 3: Form Validation Styling
+**Solution:** I used the `:valid` and `:invalid` pseudo-classes with the `:not(:placeholder-shown)` selector to show validation states only after user interaction, preventing empty fields from showing error states.
+
+### Challenge 4: Responsive Images
+**Solution:** I set explicit width and height attributes on images to prevent layout shift, combined with CSS `max-width: 100%` and `height: auto` for responsive scaling.
+
+## Screenshots
+
+The following screenshots demonstrate the responsive design at different breakpoints:
+
+- **Mobile** (< 768px): `screenshots/mobile.png`
+- **Tablet** (768px - 1024px): `screenshots/tablet.png`  
+- **Desktop** (1024px+): `screenshots/desktop.png`
+
+## Credits
+
+### Images
+- Profile image: [Placeholder.com](https://placeholder.com) - Generated placeholder
+- Project images: [Placeholder.com](https://placeholder.com) - Generated placeholders
+
+### Fonts
+- System fonts stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif
+
+### Icons & Resources
+- No external icons used - pure CSS for all visual elements
+- Color palette inspired by modern UI trends
+
+## Testing
+
+### Browser Testing
+- ✅ Google Chrome (Latest)
+- ✅ Mozilla Firefox (Latest)
+- ✅ Safari (Latest)
+- ✅ Microsoft Edge (Latest)
+
+### Responsive Testing
+- ✅ Mobile (iPhone SE, 375px)
+- ✅ Tablet (iPad, 768px)
+- ✅ Desktop (1920x1080)
+- ✅ Large Desktop (2560x1440)
+
+### Accessibility Testing
+- ✅ Semantic HTML structure
+- ✅ Alt text on all images
+- ✅ Proper heading hierarchy
+- ✅ Color contrast (WCAG AA compliant)
+- ✅ Keyboard navigation
+- ✅ Focus indicators
+- ✅ Skip link for screen readers
+
+### Validation
+- ✅ HTML5 validated with W3C Validator
+- ✅ CSS3 validated with W3C Validator
+- ✅ No JavaScript errors
+
+## Academic Integrity Declaration
+
+I hereby declare that:
+- All code in this assignment is my own original work
+- No CSS frameworks or libraries have been used
+- Images are royalty-free placeholders or my own work
+- Sources have been properly credited where applicable
+
+**Signature:** Joseh chipili
+**Date:** March 15, 2025
+
+
+
+
+
+
+
+
+
+
+
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/8NpkA7e4)
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=23071709&assignment_repo_type=AssignmentRepo)
 # Assignment 1: Responsive Portfolio Website
